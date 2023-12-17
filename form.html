@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wraper">
+        <nav>
+            <img class="logo" src="lsu.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="form.html">Registeration</a></li>
+                <li><a href="display.html">Donor list</a></li>
+                <li><a href="searchbybldgrp.html" id="searchblood">Search By Name</a></li>
+                <li><a href="searchbycity.html" id="searchbycity">Search By City</a></li>
+                <li><a href="delete.html">Delete donor</a></li> 
+                <li><a href="editdonor.html">Edit</a></li>
+            </ul>
+        <button class="btn">DONATE</button>
+        </nav>
+    <div id="register">
+        <h2> REGISTER AS A DONOR</h2>
+        <br><form name="f1"  action="display.html" onsubmit="return validation();">
+            <div class="pd">
+            <label>Full Name</label>
+            <input id="name" type="text" placeholder="Full name" name="nm">
+            <label>Age</label>
+            <input id="age" type="age" placeholder="Age" name="age">
+            <br>
+            <br>
+            <label>Address</label>
+            <input id="address" type="text" placeholder="Address" name="address"> 
+            <!--<label>Aadhar Card No</label> <input type="text" placeholder="Aadhar card number"> --> <!-- <label>Gender</label><select><option>Gender</option><option>Male</option><option>Female</option><option>Others</option></select> -->
+             <label>Blood Group</label>
+             <select id="bloodgrp" name="blood">
+                <option>Select</option>
+                <option>A positive</option>
+                <option>A negative</option>
+                <option>B positive</option>
+                <option>B negative</option>
+                <option>O positive</option>
+                <option>O negative</option>
+                <option>AB positive</option>
+                <option>AB negative</option>
+             </select>
+         </div>
+         <!--<br>
+         <div class="Contact"><h2>Contact details</h2><br><label>Mobile No</label><input type="text" placeholder="Mobile number"><label>Email</label><input type="email" placeholder="Email address"></div> -->
+        <br>
+        <div class="location">
+            <h2>LOCATION</h2>
+            <br>
+            <label>City</label>
+            <select id="city" name="city">
+            <option>Select</option>
+            <option>Ahemdabad</option>
+            <option>Agra</option>
+            <option>Allahabad</option>
+            <option>Bariely</option>
+            <option>Bangalore</option>
+            <option>Bhopal</option>
+            <option>Bhubaneswar</option>
+            <option>Calicut</option>
+            <option>Chandigarh</option>
+            <option>Chattisgarh</option>
+            <option>Chennai</option>
+            <option>Cochin</option>
+            <option>Coimbatore</option>
+            <option>Dehradun</option>
+            <option>Delhi</option>
+            <option>Durgapur</option>
+            <option>Guwahati</option>
+            <option>Hardwar</option>
+            <option>Hissar</option>
+            <option>Hyderabad</option>
+            <option>Indore</option>
+            <option>Jaipur</option>
+            <option>Jammu</option>
+            <option>Jameshdpur</option>
+            <option>Jodhpur</option>
+            <option>Kota</option>
+            <option>Kolkata</option>
+            <option>Luckhnow</option>
+            <option>Ludhiana</option>
+            <option>Mangalore</option>
+            <option>Meerut</option>
+            <option>Mumbai</option>
+            <option>Patna</option>
+            <option>Pune</option>
+            <option>Raipur</option>
+            <option>Ranchi</option>
+            <option>Srinagar</option>
+            <option>Trivandrum</option>
+            <option>Visakhapatnam</option>
+        </select>
+        </div>
+        <br>
+        <input type="checkbox">I agree to be contacted by blood banks and agree to all the Terms of Use and Privacy Policy.
+        <br>
+        <center><button type="submit" id="btn4" value="submit">Submit</button></center>
+    </form>
+    </div>
+    <script src="js/insertdonor.js"></script>
+</body>
+</html>
